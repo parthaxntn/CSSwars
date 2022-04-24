@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+}
+body{
+    background: black;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    width: 200px;
+    height: 140px;
+}
+.lines{
+    margin: auto;
+    background: yellow;
+    height: 5px;
+    width: 12px;
+    border-radius: 6px;
+    animation: an 0.6s infinite cubic-bezier(0.72, 0.39, 0.23, 0.54);
+    padding: 57px 0px;
+}
+.even{
+    animation-delay: 0.3s;
+}
+
+
+@keyframes an {
+    50%{
+        padding: 10px 0px;          /* creating the basic animation keyframe*/
+        background: green;
+    }
+}
